@@ -1,26 +1,6 @@
 <p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
-
-<p align='center'>
 快速地<sup><em>Vitesse</em></sup> 创建 Web 应用
 <br>
-</p>
-
-<br>
-
-<p align='center'>
-<a href="https://vitesse.netlify.app/">在线 Demo</a>
-</p>
-
-<br>
-
-> **Note**: 本模板创建于 Vue 3 和 Vite 的早期过渡时期。目前，如果您正在寻求更好的 Vue 开发体验和更持续的维护，我们建议您使用 [Nuxt 3](https://nuxt.com) 来代替（它也可以根据需要使用 SPA 或 SSG）。本模板仍会作为参考缓慢地维护下去，但将不会有太多的更新。
-
-<br>
-
-<p align='center'>
-<a href="https://github.com/antfu-collective/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
 
 <br>

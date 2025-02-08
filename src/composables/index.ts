@@ -1,5 +1,3 @@
-export const sitename = '网站名称'
-
 export const setting = () => useSettingStore()
 const dictstore = useDictStore()
 export const user = useUserStore()
