@@ -1,0 +1,19 @@
+.DS_Store
+.vite-ssg-dist
+.vite-ssg-temp
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+*.log
+cypress/downloads
+public/assets/fonts
+
+# 自动导入
+auto-imports.d.ts
+components.d.ts
+typed-router.d.ts
+# 临时文件
+*.timestamp*
+pnpm-lock.yaml

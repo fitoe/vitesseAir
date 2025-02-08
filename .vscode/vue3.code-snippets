@@ -1,0 +1,20 @@
+{
+  "新建Vue3页面": {
+    "scope": "vue",
+    "prefix": "vue3",
+    "body": [
+      "<script setup lang='ts'>",
+      "</script>",
+      "<template>",
+      "  <div>$1</div>",
+      "</template>",
+      "<style lang=\"scss\" scoped>",
+      "//",
+      "</style>\n",
+      "<route lang='yaml'>",
+      "meta:",
+      "  title: '页面标题'",
+      "</route>"
+    ],
+  }
+}
