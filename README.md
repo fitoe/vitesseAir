@@ -119,10 +119,6 @@
 
 > Vitesse 需要 Node 版本 >=14.18
 
-### GitHub 模板
-
-[使用这个模板创建仓库](https://github.com/antfu-collective/vitesse/generate).
-
 ### 克隆到本地
 
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
@@ -150,7 +146,7 @@ pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 
 ### 开发
 
-只需要执行以下命令就可以在 http://localhost:3333 中看到
+只需要执行以下命令就可以在 http://localhost:3000 中看到
 
 ```bash
 pnpm dev

@@ -1,8 +1,7 @@
 {
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
-  "packageManager": "pnpm@10.2.1",
   "description": "vitesseAir",
   "author": "fitoe",
   "scripts": {
