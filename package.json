@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "packageManager": "pnpm@10.2.1",
   "description": "vitesseAir",
@@ -14,7 +14,7 @@
     "zip-dist": "vite build && node zip.js",
     "up": "taze major -I",
     "sizecheck": "npx vite-bundle-visualizer",
-    "commit": "czg"
+    "commit": "bumpp --commit --push --no-tag && git add package.json && czg"
   },
   "config": {
     "commitizen": {
@@ -89,6 +89,11 @@
     "vite-ssg-sitemap": "^0.8.1",
     "vitest": "^3.0.5",
     "vue-tsc": "^2.2.0"
+  },
+  "bumpp": {
+    "files": [
+      "package.json"
+    ]
   },
   "resolutions": {
     "unplugin": "^2.1.2",
