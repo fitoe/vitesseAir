@@ -1,11 +1,17 @@
-<p align='center'>
-快速地<sup><em>Vitesse</em></sup> 创建 Web 应用
-<br>
-</p>
+> 基于 [Vitesse](https://github.com/antfu-collective/vitesse) 的vue3项目模板
 
-<br>
+## 新增特性
 
-## 特性
+- 全局变量、方法、组件，vue页面中无需再import任何东西
+- 集成[Alovajs](https://alova.js.org/zh-CN/tutorial/getting-started/introduce/),自动管理请求
+- 全局请求方法get、post等，可直接使用
+- 内置element-plus组件及图标集（使用方法 class='i-ep-xxx'）
+- 内置Echarts，按需引入
+- 自动处理在线字典，仅在用到时获取并缓存
+- pinia持久化
+- 开箱即用的cypress配置
+
+## Vitesse特性
 
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
 
