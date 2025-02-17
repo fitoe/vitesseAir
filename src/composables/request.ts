@@ -3,6 +3,7 @@ import { createClientTokenAuthentication } from 'alova/client'
 import adapterFetch from 'alova/fetch'
 import VueHook from 'alova/vue'
 
+const baseURL = import.meta.env.VITE_BASE_HOST
 const handleRefreshToken = () => post('/auth/refresh-token', { refreshToken: user.info?.refreshToken }, { meta: { authRole: 'refreshToken' } })
 const { onAuthRequired } = createClientTokenAuthentication({
   assignToken: (method) => {
@@ -38,7 +39,7 @@ const { onAuthRequired } = createClientTokenAuthentication({
 
 const instance = createAlova({
   statesHook: VueHook,
-  baseURL: import.meta.env.VITE_BASE_HOST,
+  baseURL,
   requestAdapter: adapterFetch(),
   timeout: 8000,
   cacheFor: {
@@ -75,10 +76,12 @@ const instance = createAlova({
 })
 
 // 优化：使用泛型和默认参数
-export const get = (url: string, params?: object, config: object = {}) => instance.Get(url, { ...params, ...config })
+export const get = <T>(url: string, params?: object, config: object = { baseURL }) => instance.Get<T>(url, { params, ...config, ...requestparams })
 
-export const post = (url: string, data?: object, config: object = {}) => instance.Post(url, data, config)
+export const post = <T>(url: string, data?: object, config: object = { baseURL }) => instance.Post<T>(url, data, config)
 
-export const del = (url: string, data?: object, config: object = {}) => instance.Delete(url, data, config)
+export const del = <T>(url: string, data?: object, config: object = { baseURL }) => instance.Delete<T>(url, data, config)
 
-export const put = (url: string, data?: object, config: object = {}) => instance.Put(url, data, config)
+export const put = <T>(url: string, data?: object, config: object = { baseURL }) => instance.Put<T>(url, data, config)
+
+export const upload = <T>(url: string, data: { name: string, filePath: string, formData: object }, config: object = {}) => instance.Post<T>(url, data, { requestType: 'upload', fileType: 'image', ...config })

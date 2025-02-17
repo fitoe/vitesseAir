@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => {
   return {
     base: '/',
     build: {
-      minify: prod && true,
+      minify: prod,
       chunkSizeWarningLimit: 500,
       assetsDir: '',
       rollupOptions: {},

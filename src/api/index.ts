@@ -1,1 +1,1 @@
-export const getUserInfo = () => get('/user/info')
+// export const getUserInfo = () => get('/user/info')
