@@ -202,6 +202,7 @@ export default defineConfig(({ mode }) => {
       script: 'async',
       formatting: 'minify',
       beastiesOptions: {
+        external: false,
         reduceInlineStyles: false,
       },
       onFinished() {
@@ -211,7 +212,7 @@ export default defineConfig(({ mode }) => {
 
     ssr: {
       // TODO: workaround until they support native ESM
-      noExternal: ['workbox-window', /vue-i18n/],
+      noExternal: ['workbox-window', /vue-i18n/, /element-plus/],
     },
   }
 })
