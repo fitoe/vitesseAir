@@ -26,7 +26,6 @@ export default defineConfig(({ mode }) => {
     build: {
       minify: prod,
       chunkSizeWarningLimit: 500,
-      assetsDir: '',
       rollupOptions: {},
     },
     resolve: {
@@ -79,6 +78,7 @@ export default defineConfig(({ mode }) => {
         imports: [
           'vue',
           'vue-i18n',
+          'pinia',
           '@vueuse/head',
           '@vueuse/core',
           VueRouterAutoImports,
