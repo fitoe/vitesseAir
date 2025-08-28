@@ -76,7 +76,7 @@ const instance = createAlova({
 })
 
 // 优化：使用泛型和默认参数
-export const get = <T>(url: string, params?: object, config: object = { baseURL }) => instance.Get<T>(url, { params, ...config, ...requestparams })
+export const get = <T>(url: string, params?: object, config: object = { baseURL }) => instance.Get<T>(url, { params, ...config })
 
 export const post = <T>(url: string, data?: object, config: object = { baseURL }) => instance.Post<T>(url, data, config)
 
