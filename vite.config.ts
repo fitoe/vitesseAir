@@ -1,6 +1,7 @@
 import path from 'node:path'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import Shiki from '@shikijs/markdown-it'
+import legacy from '@vitejs/plugin-legacy'
 import Vue from '@vitejs/plugin-vue'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
@@ -59,6 +60,9 @@ export default defineConfig(({ mode }) => {
     plugins: [
       Vue({
         include: [/\.vue$/, /\.md$/],
+      }),
+      legacy({
+        targets: ['defaults', 'not IE 11'],
       }),
       ElementPlus({
         useSource: false,
